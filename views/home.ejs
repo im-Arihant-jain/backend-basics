@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>      
+    <h1 class="main-title">Instagram</h1>
+     <h3 class="main-title">Hi, welcome to instagram <span><%= data.name %></span> !</h3>
+     <div>
+        <h2>FOLLOWERS: <span><%= data.followers %></span></h2>
+        <h2>FOLLOWING: <span><%= data.following %></span></h2>
+     </div>
+     <% for (let i = 0; i < data.posts.length; i++) { %> 
+        <div class="session">
+            <div><img src="<%= data.posts[i].image %>"/></div>
+            <div>
+                <div> <span><%= data.posts[i].likes %></span></div>
+                <div> <span><%=data.posts[i].comments %></span></div>
+            </div>
+        </div>
+        <% } %>
+</body>
+</html>

@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(194, 144, 79);
+}
+.main-title{
+   
+    text-align: center;
+}
+span{
+    font-size: large;
+    color: aqua;
+}
+div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.session{
+    display: block;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
